@@ -2,13 +2,28 @@
 const CACHE_NAME = 'Ak-ink',
   urlsToCache = [
     './',
+    './inidex.js',
     './inidex.css',
     './index.html',
-    './pages',
+    './pages/centroDeAyuda.html',
+    './pages/formulario.html',
+    './pages/menu.html',
+    './pages/registrar.html',
+    './pages/servicios.html',
     './script.js',
-    './styles',
+    './styles/centroDeAyuda.css',
+    './styles/formulario.css',
+    './styles/menu.css',
+    './styles/servicios.css',
+    './styles/registrar.css',
     './img',
-    './src'
+    './src/cajero-automatico.png',
+    './src/costo-de-la-educacion.png',
+    './src/mapa.png',
+    './src/mapas-de-google.png',
+    './src/servicio-al-cliente.png',
+    './src/user.png',
+    
     
   ]
 
