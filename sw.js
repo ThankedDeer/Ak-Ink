@@ -3,7 +3,13 @@ const CACHE_NAME = 'Ak-ink',
   urlsToCache = [
     './',
     './inidex.css',
+    './index.html',
+    './pages',
     './script.js',
+    './styles',
+    './img',
+    './src'
+    
   ]
 
 //durante la fase de instalación, generalmente se almacena en caché los activos estáticos
