@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap');
+
+/* body{
+    background-color: #8070ff;
+} */
+
+.color{
+    background-color: #8070ff !important;
+}
+.color2{
+    background-color: #9e92ff !important;
+}
+.titulo{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.mapa{
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+    position: absolute;
+    left: 0px;
+    
+}
+
+#lineas{
+    border: 2px solid;
+    border-radius: 10px;
+}
+.card{
+    background-color: #8070ff !important;
+    border: 1px solid black !important;
+    color: white !important;
+    text-align: justify;
+}
+.cajero{
+
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 20px;
+    padding: 5px;
+    
+    
+}
+
+#cajero1{
+    top: 100px;
+    left: 100px;
+    
+}
+
+#cajero2{
+    top: 270px;
+    left: 10px;
+    
+}
+#cajero3{
+    top: 200px;
+    right:30px;
+    background-color: #9e92ff;
+   
+    
+}
+#cajero4{
+    bottom: 270px;
+    right: 130px;
+    
+}
+.gps{
+    width: 35px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 7px;
+    margin-right: 10px;
+}
+.container{
+    display: grid;
+    justify-content: center;
+}
+
+/* Hide the default checkbox */
+.palomita input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+   }
+   
+   .palomita {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+   }
+   
+   /* Create a custom checkbox */
+   .checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1.3em;
+    width: 1.3em;
+    background-color: #ccc;
+    border-radius: 25px;
+    transition: 0.15s;
+   }
+   
+   /* When the checkbox is checked, add a blue background */
+   .palomita input:checked ~ .checkmark {
+    background-color: limegreen;
+    border-radius: 25px;
+    transition: 0.15s;
+    
+   }
+   
+   /* Create the checkmark/indicator (hidden when not checked) */
+   .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+   }
+   
+   /* Show the checkmark when checked */
+   .palomita input:checked ~ .checkmark:after {
+    display: block;
+    top: 7px;
+    left: 11px;
+   }
+   
+   /* Style the checkmark/indicator */
+   .palomita .checkmark:after {
+    left: 0.45em;
+    top: 0.25em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid white;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /* me gusta */
+
+   .megusta input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .megusta {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 11px;
+    user-select: none;
+    transition: 100ms;
+  }
+  
+  .checkmark2 {
+    top: 0;
+    left: 0;
+    height: 2em;
+    width: 2em;
+    transition: 100ms;
+    animation: dislike_effect 400ms ease;
+  }
+  
+  .megusta input:checked ~ .checkmark2 path {
+    fill: #FF5353;
+    stroke-width: 0;
+  }
+  
+  .megusta input:checked ~ .checkmark2 {
+    animation: like_effect 400ms ease;
+  }
+  
+  .megusta:hover {
+    transform: scale(1.1);
+  }
+  
+  @keyframes like_effect {
+    0% {
+      transform: scale(0);
+    }
+  
+    50% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes dislike_effect {
+    0% {
+      transform: scale(0);
+    }
+  
+    50% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* dislike */
+
+
+  .nomegusta input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .nomegusta {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  svg {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    transition: all 0.3s;
+    fill: #666;
+  }
+  
+  svg:hover {
+    transform: scale(1.1) rotate(-10deg);
+  }
+  
+  .nomegusta input:checked ~ svg {
+    fill: rgb(185, 51, 51);
+  }
+  
+  .col-4{
+    display: grid;
+    justify-content: center;
+    
+    
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
